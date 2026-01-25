@@ -38,6 +38,8 @@ export default async function handler(req, res) {
     const CLIENT_ID = process.env.SHOPIFY_CLIENT_ID;
     const CLIENT_SECRET = process.env.SHOPIFY_CLIENT_SECRET;
     const ACCESS_TOKEN = process.env.SHOPIFY_ACCESS_TOKEN;
+    // Use Client Credentials for API access
+const credentials = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString('base64');
 
     if (!SHOP_NAME || !ACCESS_TOKEN) {
       console.error('Missing environment variables');
