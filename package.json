@@ -1,0 +1,13 @@
+{
+  "name": "calculator-checkout-api",
+  "version": "1.0.0",
+  "description": "Shopify Calculator Draft Order API for Resin Rock",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
